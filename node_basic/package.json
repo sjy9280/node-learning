@@ -6,8 +6,12 @@
   "bin": {
     "node-learning-basic": "./bin/basic"
   },
+  "type": "module",
+  "types": "./types/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/index.ts"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +19,9 @@
     "express": "4.21.2"
   },
   "devDependencies": {
-    "nodemon": "3.1.9"
+    "nodemon": "3.1.9",
+    "typescript": "5.8.2",
+    "@types/node": "22.13.10",
+    "ts-node": "10.9.2"
   }
 }
