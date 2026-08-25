@@ -39,7 +39,7 @@ docker提倡系统中最核心的kernel提取出来，单独作为一个微型�
 
 - docker hub
 
-  代码发布到github
+  代码发布到github 
 
   docker也有一个集中仓库，用来存储image
 
@@ -112,3 +112,34 @@ redis过期什么场景使用？
   据。
 - AOF持久化
   AOF是将每条写命令都记录到日志中的持久化方式。AOF允许Redis通过重放日志文件来重建数据库，支持更高的实时性。
+
+
+
+
+
+## Nest
+
+Controller：负责请求的定义
+
+1. 参数校验，请求来时校验（interceptor）
+2. 权限控制（Guards）
+3. 拦截器处理响应参数
+
+Service：负责数据处理（查数据库）
+
+1. 数据库操作
+2. 文件IO操作
+3. 数据处理
+
+Module：
+
+   整合Controller、Service等，其他模块
+
+
+
+
+
+
+
+
+
